@@ -1,0 +1,212 @@
+html{
+    overflow-x: hidden;
+}
+.D2{
+    height:100vh;
+    width: 100vw;
+    /* background-color: cornflowerblue; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position:relative;
+   top:0vh;
+   z-index: 0;
+}
+.D21{
+    height:80vh;
+    width:26%;
+    /* background-color: brown; */
+    float: left;
+    margin-left:1%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.dd2{
+    width: 38%;
+    /* background-color: rgb(64, 155, 235); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.dd0{
+
+    background-color: rgb(247, 210, 225);
+}
+.dd1{
+    background-color: rgb(249, 249, 214);
+}
+.D21 img{
+    height: 80vh;
+    width:100%;
+    position: relative;
+    transition: all 2s;
+    z-index: 0;
+}
+.D21 img:hover{
+    transform: scale(1.2);
+    z-index: 0;
+}
+.D21 div{
+    position:absolute;
+    top:70vh;
+    left:5.5vw;
+    font-size:1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15vw;
+    color: black;
+}
+.D21 p{
+   font-weight: normal;
+   font-size:0.8em;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.D21 h6{
+    font-weight:500;
+    letter-spacing:0.06em;
+    word-spacing:0.6em;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.D21 h4{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        font-size: 1.1em;
+}
+.dd2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    position: absolute;
+    width:40vw;
+    height:40vh;
+    top: 26vh;
+    left:0vw;
+    color: black;
+}
+.dd2 h6{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    word-spacing:0.2em;
+}
+.dd2 h1{
+    font-weight: 500;
+    font-size:2.2em;
+}
+.dd2 p{
+    font-size:0.9em;
+}
+.dd2 a h5{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:0.8em;
+    font-weight: 600;
+    transition: all 1s;
+   color: black;
+}
+.dd2 a h5:hover{
+    text-decoration: underline solid 1px black;
+    transform: translatey(30%);
+    display: block;
+    cursor: pointer;
+}
+@media screen and (max-width:767px)
+{
+    .D2{
+        /* background-color: aquamarine; */
+        position: relative;
+        top:-38vh;
+      height:150vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .D2 .D21{
+        position: relative;
+        top:-1vh;
+        width:80vw;
+        height:55vh;
+        margin-top:5%;
+    }
+    .D21 img{
+       width: 100%; 
+       height: fit-content;
+    }
+    .D21 div{
+        width: 40%;
+        position: absolute;
+        top:45vh;
+        left: 25vw;
+        font-size:0.8em;
+        /* background-color: blueviolet; */
+    }
+    .D2 .dd2{
+        /* background-color: blue; */
+        height: 30vh;
+    }
+    .dd2 div{
+        position: absolute;
+        top: 0vh;
+        left: 0vw;
+        width:100%;
+        /* background-color: brown; */
+    }
+   
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+
+    .D2{
+        display: flex;
+        position: relative;
+        top:-35vh;
+        height:92vh;
+    }
+    .dd0{
+        width: 50%;
+        height: 60vh;
+        position: absolute;
+        left:-1vw;
+        top: 0vh;
+    }
+    .dd0 img{
+            height: 60vh;
+    }
+    .dd0 div{
+        position: absolute;
+        top:50vh;
+        left:25%;
+        width:50%;
+    }
+    .dd1{
+        width: 50%;
+        height: 60vh;
+        position: absolute;
+        left:50vw;
+        top: 0vh;
+    }
+    .dd1 img{
+        height:60vh;
+    }
+    .dd1 div{
+        position: absolute;
+        top:50vh;
+        left:25%;
+        width:50%;
+    }
+    .dd2{
+        position: absolute;
+        top:60vh;
+        height: 31vh;
+        width: 100%;
+    }
+    .dd2 div{
+        width:100%;
+        top:1vh;
+        left:0vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

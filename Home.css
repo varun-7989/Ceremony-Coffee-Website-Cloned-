@@ -1,0 +1,424 @@
+html{
+    overflow-x: hidden;
+}
+*{
+    margin: 0%;
+}
+.top{
+    width: 100vw;
+    height:8vh;
+    background-color: rgb(45, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tophead1{
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    position: static;
+}
+.nav{
+    width: 100vw;
+    height:10vh;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top:0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.nav #navlist{
+   list-style: none;
+   /* background-color: chartreuse; */
+   width: 35%;
+   height: 10vh;
+   position: absolute;
+   left:-1%;
+   top:2.5vh;
+}
+.nav #navlist #n1{
+    width:fit-content;
+    height:6vh;
+    /* background-color: blue; */
+    display: inline-block;
+    margin:2%;
+    transition: all 1s;
+}
+#n1:hover{
+    text-decoration: underline solid 2% white;
+    transform:translateY(40%);
+}
+.shoplist{
+    height:55vh;
+    width:100vw;
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    top:100vh;
+    left:-0%;
+    display: none;
+   
+}
+.shop1{
+    width:12%;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    margin-left:2%;
+    margin-top: 1%;
+}
+.shop1 ul li{
+    list-style: none;
+    margin:10%;
+    margin-left:-10%;
+    position:relative;
+    top:5vh;
+}
+.sa11{
+    font-weight: 600;
+}
+#sa1{
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#sa1:hover{
+   font-weight: 900;
+}
+.shoplist .shop1{
+    float: left;
+}
+.shop2{
+    width: 65vw;
+    background-color: rgb(231, 235, 238);
+}
+#sss2{
+    width:18vw;
+    height:36vh;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin:2%;
+    position:relative;
+    top:10vh;
+}
+#sss2 video{
+    width:100%;
+    height:100%;
+}
+#sss2 a~p{
+    color: black;
+    position: relative;
+    left:4.2vw;
+}
+#sss2 a~#p{
+    color: aliceblue;
+}
+#sss2 p{
+    position: relative;
+    top:-35vh;
+    left:5vw;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing:0.02em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#sss2 a~#p1{
+    color: black;
+    position: relative;
+    left:6vw;
+}
+#sss2 img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+#sss2 img:hover{
+    transform: scale(1.1);
+}
+.nav #navlist .n11:hover .shoplist{
+    display: block;
+    transition: all 2s;
+    position: absolute;
+    top:4.5vh;
+   
+}
+#nava{
+    color: rgb(255, 255, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    letter-spacing:0.05em;
+    font-size:0.9em;
+   
+}
+.nav .logo{
+   
+    /* background-color: rgb(147, 133, 124); */
+    width:fit-content;
+    position: relative;
+    top:-10%;
+    z-index: 5;
+    transition: all 1s;
+}
+#logoname2 a{
+    /* background-color: cadetblue; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: 0.8em;
+    letter-spacing: 0.12em;
+    position: absolute;
+    top:115%;
+    left:10%;
+}
+#logoname{
+    font-family:'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-weight: 200;
+    letter-spacing:0.29em;
+    z-index: 5;
+}
+.nav #navlist1 #n2{
+    display:inline-block;
+    /* background-color: blue; */
+    height: 6vh;
+    margin: 3%;
+    transition: all 1s;
+    
+}
+ #navlist1{
+    position: absolute;
+    left: 70%;
+    top: 2.5vh;
+    /* background-color: brown; */
+    width:28%;
+    height:10vh;
+    z-index: 5;
+}
+.nav #navlist1{
+    list-style:none;
+}
+.fa{
+    color: rgb(255, 255, 255);
+}
+.ser{
+    width:94vw;
+    height: 80vh;
+    background-color: rgba(226, 226, 226, 0.95);
+    display: none;
+    position: absolute;
+    top:-390%;
+    right:-70%;
+    transition: all 1s;
+}
+.ser input{
+    position: relative;
+    top: 30vh;
+    left:8%;
+    height:10vh;
+    width: 80%;
+    font-size:1.5em;
+    border-bottom: solid 3px black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background:transparent;
+    
+}
+.ser span{
+    position: relative;
+    top: 32vh;
+    left:14vh;
+    color: black;
+    font-size: 2em;
+}
+.ser ul li a{
+    position: relative;
+    top: 38vh;
+    left:22%;
+    color: black;
+    font-size: 2.2em;
+    list-style: none;
+ 
+}
+.ser ul li:hover a{
+    border-bottom: solid 3px black;
+
+}
+.ser ul li{
+    list-style: none;
+    display: inline;
+    margin: 2%;
+    /* background-color: blueviolet; */
+    
+}
+
+.ser .quick{
+    position: relative;
+    top: 35vh;
+    left:46%;
+}
+
+.n22:hover .ser{
+    display: block;
+}
+#n2:hover{
+    text-decoration: underline solid 2% white;
+    transform:translateY(40%);
+    
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.logo:hover{
+        transform: scaleX(1.09);
+}
+.checkbt{
+   display: none;
+}
+#check{
+    display: none;
+    position: relative;
+    left:-33vw;
+}
+@media screen and (min-width:768px) and (max-width:1024px) 
+{
+    .nav{
+        width: 100%;
+        height:12vh;
+        background-color: rgb(0, 0, 0);
+        position: sticky;
+        top:0vh;
+    }
+    .nav #navlist #n1{
+        width:50vw;
+        height:fit-content;
+        background-color:rgb(236, 218, 248);
+        font-size: 2em;
+        margin-top:1.5vh;
+        position: relative;
+        top: 9vh;
+        left:-5%;
+        display: none;
+        
+    }
+    .nav #navlist1 #n2{
+        position: relative;
+        left:-260.2%;
+        top:30vh;
+        margin-top:1.5vh;
+        font-size:2em;
+        width:50vw;
+        height: fit-content;
+        background-color: rgb(236, 218, 248);
+        display: none;
+    }
+    
+    #nava{
+        color: black;
+    }
+    .checkbt{
+        display: inline;
+        position: absolute;
+        left:4%; 
+        font-size:30px;
+    }
+    #check:checked~#navlist{
+        left:100px;
+        transition: all 2s;
+    }
+    #check:checked~#navlist1{
+        left:800px;
+        transition: all 2s;
+    }
+    .nav .checkbt:focus #n2{
+        display:block;
+    }
+    .shoplist{
+        display: none;
+    }
+    .nav #navlist .n11:hover .shoplist{
+        display: none;
+    }
+    .n22:hover .ser{
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
+
+    .top{
+        height:3vh;
+    }.top #tophead1{
+        
+        font-size:0.5em;
+    }
+    .nav{
+        width: 100%;
+        height:5vh;
+        background-color: rgb(0, 0, 0);
+        position: sticky;
+        top:0vh;
+    }
+    .logo{
+        height:2vh;
+        font-size:0.5em;
+    }
+    .nav #navlist #n1{
+        background-color: rgb(39, 39, 42);
+        display: flex;
+        /* display: none; */
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        top:3vh;
+        left:-20%;
+        width:92vw;
+        height:3vh;
+        font-size: 0.8em;
+    }
+    .nav #navlist1 #n2{
+        background-color: rgb(39, 39, 42);
+         display: flex;
+        /* display: none;  */
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 17vh;
+        left: -280%;
+        width: 92vw;
+        height:3vh;
+        font-size:0.8em;
+    }
+    .checkbt{
+        display: inline;
+        position: absolute;
+        left:4%; 
+    }
+    #check:checked~#navlist{
+        left:450px;
+        transition: all 2s;
+    }
+    #check:checked~#navlist1{
+        left:800px;
+        transition: all 2s;
+    }
+    .nav .checkbt:focus #n2{
+        display:block;
+    }
+    .nav #navlist .n11:hover .shoplist{
+        display: none;
+    }
+    .n22:hover .ser{
+        display: none;
+    }
+  
+
+}
+
+
+
+
+
