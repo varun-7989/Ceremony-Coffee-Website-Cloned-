@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            width: 100vw;
+            height:12vh;
+            background-color:white;
+            position: sticky;
+            z-index: 1;
+            top:0vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            border-bottom: 1.5px solid lightgray;   
+        }
+        .nav #navlist{
+           list-style: none;
+           /* background-color: chartreuse; */
+           width: 30%;
+           height: fit-content;
+           position: absolute;
+           top:30%;
+           left:0%;
+        }
+        .nav #navlist #n1{
+            width:fit-content;
+            height:fit-content;
+            /* background-color: blue; */
+            display: inline-block;
+            margin:2.5%;
+            transition: all 2s;
+            
+        }
+        #n1:hover{
+            text-decoration: underline solid 2% black;
+            transform:translateY(40%);
+        }
+        .shoplist{
+            height:55vh;
+            width:100vw;
+            background-color: rgb(255, 255, 255);
+            position:absolute;
+            top:100%;
+            left:-0%;
+            display: none;  
+        }
+        .shop1{
+            width:12%;
+            height: 50vh;
+            background-color: rgb(255, 255, 255);
+            margin-left:2%;
+            margin-top: 1%;
+        }
+        .shop1 ul li{
+            list-style: none;
+            margin:10%;
+            margin-left:-10%;
+            position:relative;
+            top:5vh;
+        }
+        .sa11{
+            font-weight: 600;
+        }
+        #sa1{
+            color: black;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #sa1:hover{
+           font-weight: 900;
+        }
+        .shoplist .shop1{
+            float: left;
+        }
+        .shop2{
+            width: 65vw;
+            background-color: rgb(231, 235, 238);
+        }
+        #sss2{
+            width:18vw;
+            height:36vh;
+            background-color: rgb(255, 255, 255);
+            float: left;
+            margin:2%;
+            position:relative;
+            top:10vh;
+        }
+        #sss2 video{
+            width:100%;
+            height:100%;
+        }
+        #sss2 a~p{
+            color: black;
+            position: relative;
+            left:4.2vw;
+        }
+        #sss2 a~#p{
+            color: aliceblue;
+        }
+        #sss2 p{
+            position: relative;
+            top:-35vh;
+            left:5vw;
+            height: fit-content;
+            width: fit-content;
+            text-align: center;
+            color: aliceblue;
+            letter-spacing:0.02em;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #sss2 a~#p1{
+            color: black;
+            position: relative;
+            left:6vw;
+        }
+        #sss2 img{
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        #sss2 img:hover{
+            transform: scale(1.1);
+        }
+        .nav #navlist .n11:hover .shoplist{
+            display: block;
+            transition: all 2s;
+            position: absolute;
+            top:5.5vh;
+        }
+        #nava{
+            color:black;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            letter-spacing:0.05em;
+            font-size:0.9em;  
+        }
+        .nav .logo{  
+            /* background-color: rgb(147, 133, 124); */
+            width:fit-content;
+            position: relative;
+            top:-10%;
+            transition: all 2s;
+        }
+        #logoname2{
+            /* background-color: cadetblue; */
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            font-family:Arial, Helvetica, sans-serif;
+            color:black;
+            font-size: 0.8em;
+            letter-spacing: 0.12em;
+            position: absolute;
+            top:115%;
+            left:10%;  
+        }
+        #logoname{
+            font-family:'Times New Roman', Times, serif;
+            color:black;
+            font-weight: 200;
+            letter-spacing:0.29em;
+        }
+        .nav #navlist1 #n2{
+            display:inline-block;
+            margin: 4%;
+            transition: all 2s;
+        }
+         #navlist1{
+            position: absolute;
+            left: 70%;
+            /* background-color: brown; */
+            width:24%;
+        }
+        .nav #navlist1{
+            list-style:none;
+        }
+        .fa{
+            color:black;
+        }
+        #n2:hover{
+            text-decoration: underline solid 2% black;
+            transform:translateY(40%);   
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .logo:hover{
+                transform: scaleX(1.09);
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .sub1{
+            height: 95vh;
+            width:100%;
+        }
+        .common2{
+            height: 100%;
+            width:49.5%;
+            float: left;
+        }
+        .c1{
+            height: 4vh;
+            width:18vw;
+            margin-top: 12%;
+            margin-left: 24%;
+        }
+        .content a,.c1{
+            text-decoration: none;
+            color: black; 
+            letter-spacing: 0.11em;
+            color:dimgrey;
+            font-size: 1.12em;
+            font-weight:400;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .c2{
+            height: 20.5vh;
+            width: 30vw;
+            margin-left: 24%;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.1em;
+            font-weight:500;
+        }
+        .c3{
+            height:4vh;
+            width: 18vw;
+            margin-left: 24%;
+            margin-top: 1.5%;
+            font-size: 0.92em;
+        }
+        .c4{
+            height: 8vh;
+            width:18vw;
+            margin-top: 2.4%;
+            margin-left: 24%;
+            color:dimgray;
+            letter-spacing: 0.11em;
+            font-size: 0.87em;
+            font-weight:400;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .c5{
+            height: 8vh;
+            width:18vw;
+            margin-left: 24%;
+            color:dimgray;
+            letter-spacing: 0.11em;
+            font-size: 0.87em;
+            font-weight:400;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .c6{
+            height: 7.5vh;
+            width:18vw;
+            margin-left: 24%;
+            letter-spacing: 0.12em;
+            font-size: 0.89em;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .c7{
+            height: 8vh;
+            width:25vw;
+            margin-top: 1.5%;
+            margin-left: 24%;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s;
+        }
+        .img:hover{
+           border-radius: 10%;
+           box-shadow: 1px 1px 15px darkgrey, 1px -1px 15px darkgray, -1px -1px 15px darkgray, -1px 1px 15px darkgray;
+        }
+        input{
+            padding-top: 2%;
+            border: 0;
+            outline: 0;
+        }
+        select{
+            border: 0;
+            outline: 0;
+        }
+        .b1{
+            margin-top: 2.5%;
+            padding: 3.5% 5.5%;
+            font-size:0.8em;
+            background-color: black;
+            color: white;
+            letter-spacing: 0.11em;
+            transition: all 1.5s;
+            border: 0;
+        }
+        .b1:hover{
+            color: black;
+            background-color: white;
+            transform: scale(1.05,1.05);   
+        }
+        .content a,.info1{
+            font-family:Arial;
+            letter-spacing: 0.11em;
+            color: black;
+            font-size: 0.78em;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <div class="nav">
+        <ul id="navlist">
+            <div id="n1" class="n11">
+            <li><a href="" id="nava">SHOP</a></li>
+
+            <div class="shoplist">
+
+                <div class="shop1">
+                   <ul>
+                    <li><a href="" id="sa1" class="sa11">COFFEE</a></li>
+                    <li><a href="" id="sa1">Single Origin</a></li>
+                    <li><a href="" id="sa1">Blend</a></li>
+                    <li><a href="" id="sa1">Espresso</a></li>
+                    <li><a href="" id="sa1">Decaf</a></li>
+                    <li><a href="" id="sa1">Subscription</a></li>
+                    <li><a href="" id="sa1">Instant Coffee</a></li>
+                   </ul>
+                </div>
+
+                <div class="shop1">
+                   <ul>
+                    <li> <a href="" id="sa1" class="sa11">GEAR</a></li>
+                    <li> <a href="" id="sa1">Merch</a></li>
+                    <li> <a href="" id="sa1">Supplies</a></li>
+                    <li> <a href="" id="sa1">Brewers</a></li>
+                    <li> <a href="" id="sa1">Grinders</a></li>
+                    <li> <a href="" id="sa1">Gift Cards</a></li>
+                   </ul>
+                </div>
+
+                <div class="shop1 shop2">
+                        <div id="sss2"><a href=""><video src="https://ceremonycoffee.com/wp-content/uploads/ceremony-coffee-subscriptions-card_1.mp4" autoplay muted loop></video></a><p id="p">BUILD YOUR <br>SUBSCRIPTION</p> </div>
+                        <div id="sss2" class="sss22"><a href=""><img src="/CSS/CermonyCofee/Homepage/2023_ceremony_web-bag-fall23-512x512-removebg-preview.png" alt=""></a> <p>FEATURED <br>SEASONAL BLEND</p></div>
+                        <div id="sss2"><a href=""><video src="https://ceremonycoffee.com/wp-content/uploads/ceremony-coffee-tbc-dot-animation.mp4" autoplay muted loop></video></a> <p id="p1">TASTE BY <br>COLOR</p></div>
+                </div>
+            </div>
+        </div >         
+           <div id="n1"> 
+            <li><a href="" id="nava">SUBSCRIPTION</a></li>
+           </div>
+            <div id="n1">
+                <li><a href="" id="nava">WHOLESALE</a></li>
+            </div>
+            <div id="n1">
+            <li><a href="" id="nava">COLD BREW</a></li>
+        </div>
+        </ul>
+
+        <div class="logo">
+            <a href=""><h2 id="logoname">CEREMONY</h2></a>
+            <div id="logoname2"><a href="">COFFEE ROASTERS</a></div>
+        </div>
+        
+        <ul id="navlist1">
+            <div id="n2">
+            <li><a href="" id="nava">LOCATIONS</a></li>
+            </div >
+           <div id="n2"> 
+            <li><a href="" id="nava">LEARN</a></li>
+           </div>
+            <div id="n2">
+                <li><a href="" id="nava">ACCOUNT</a></li>
+            </div>
+            <div id="n2">
+            <li class="fa fa-search" style="cursor:pointer;"></li>
+        </div>
+        </ul>
+    </div>
+
+    <div class="sub1">
+        <div class="common2 img" style="background-color:rgb(83, 113, 85);">
+            <img src="https://cdn.shopify.com/s/files/1/2220/0129/t/6/assets/cf06092cc1c3--holiday2023bag.png?v=1699641771" alt="" 
+            style="height: 55vh; width:25vw"> 
+        </div>
+        <div class="common2 content">
+            <a href="./coffeeSubscription.html"><div class="c1">GO BACK</div></a>
+            <div class="c2">Start Customizing Your <br> Subscription For <br> Holiday Annuals 2023</div>
+            <div class="c3">$19.00 12oz</div>
+            <div class="c4">QUANTITY <br><input type="number"></div>
+            <div class="c5">GRIND TYPE  <br>
+                <select name="" id="">
+                    <option value="Whole Bean">Whole Bean</option>
+                    <option value="Espresso">Espresso</option>
+                    <option value="Aeropress">Aeropress</option>
+                    <option value="Single-cup Pourover">Single-cup Pourover</option>
+                    <option value="Auto-drip Pourover">Auto-drip Pourover</option>
+                    <option value="Steep + Release Brewer">Steep + Release Brewer</option>
+                    <option value="French Press">French Press</option>
+                    <option value="Cold Brew">Cold Brew</option>
+                </select>
+            </div>
+            <div class="c6">DELIVER EVERY <br>
+                <select name="" id="">
+                    <option value="1 Week">1 Week</option>
+                    <option value="2 Weeks">2 Weeks</option>
+                    <option value="3 Weeks">3 Weeks</option>
+                    <option value="4 Weeks">4 Weeks</option>
+                    <option value="6 Weeks">6 Weeks</option>
+                    <option value="8 Weeks">8 Weeks</option>
+                </select>
+            </div>
+            <div class="c7">
+                <button class="b1">ADD TO CART</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://shop.ceremonycoffee.com/products/holiday-annuals-2024?ref=shown" class="info1">MORE OPTIONS</a>
+            </div>
+        </div>
+    </div>     
+    
+</body>
+</html>
